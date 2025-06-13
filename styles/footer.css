@@ -1,0 +1,17 @@
+.footer {
+    background-color: #004943;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 100px 0;
+}
+
+.footer__logo-container {
+    max-width: 100%;
+    padding: 0 16px;
+}
+
+
+.footer__logo-svg {
+    max-width: 100%;;
+}
