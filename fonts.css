@@ -141,3 +141,36 @@
     font-weight: 900;
     font-style: italic;
 }
+
+/* Century Old Style Regular */
+@font-face {
+    font-family: 'Century Old Style';
+    src: url('../assets/CenturyOldStyle-Regular.ttf') format('truetype'),
+         url('../assets/CenturyOldStyle-Regular.woff2') format('woff2'),
+         url('../assets/CenturyOldStyle-Regular.woff') format('woff'),
+         url('../assets/CenturyOldStyle-Regular.otf') format('opentype');
+    font-weight: 400;
+    font-style: normal;
+}
+
+/* Century Old Style - Italic */
+@font-face {
+    font-family: 'Century Old Style';
+    src: url('../assets/CenturyOldStyle-Italic.ttf') format('truetype'),
+         url('../assets/CenturyOldStyle-Italic.woff2') format('woff2'),
+         url('../assets/CenturyOldStyle-Italic.woff') format('woff'),
+         url('../assets/CenturyOldStyle-Italic.otf') format('opentype');
+    font-weight: 400;
+    font-style: italic;
+}
+
+/* Century Old Style Bold */
+@font-face {
+    font-family: 'Century Old Style';
+    src: url('../assets/CenturyOldStyle-Bold.ttf') format('truetype'),
+         url('../assets/CenturyOldStyle-Bold.woff2') format('woff2'),
+         url('../assets/CenturyOldStyle-Bold.woff') format('woff'),
+         url('../assets/CenturyOldStyle-Bold.otf') format('opentype');
+    font-weight: 700;
+    font-style: normal;
+}
