@@ -1,0 +1,48 @@
+.featured-in {
+    background-color: #004943;
+    padding: 40px 24px
+}
+
+.featured-in__heading {
+    color: #FFF;
+    text-align: center;
+    font-family: Poppins;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: normal;
+    letter-spacing: 0.48px;
+    text-transform: uppercase;
+    margin-bottom: 24px;
+}
+
+.featured-in__logos-grid {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 24px;
+    justify-items: center;
+    align-items: center;
+    margin-bottom: 20px;
+}
+
+.featured-in__logo-container {
+    max-width: 100%;;
+}
+
+.featured-in__logo-container svg {
+    max-width: 100%;
+    height: auto;
+}
+
+@media screen and (min-width: 768px) {
+    .featured-in__logos-grid {
+        grid-template-columns: repeat(4, 1fr);
+    }
+}
+
+@media screen and (min-width: 1200px) {
+    .featured-in__logos-grid {
+        gap: 40px;
+        grid-template-columns: repeat(8, minmax(0px,1fr));
+    }
+}
