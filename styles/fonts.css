@@ -144,33 +144,33 @@
 
 /* Century Old Style Regular */
 @font-face {
-    font-family: 'Century Old Style';
-    src: url('../assets/fonts/CenturyOldStyle-Regular.ttf') format('truetype'),
-         url('../assets/fonts/CenturyOldStyle-Regular.woff2') format('woff2'),
-         url('../assets/fonts/CenturyOldStyle-Regular.woff') format('woff'),
-         url('../assets/fonts/CenturyOldStyle-Regular.otf') format('opentype');
+    font-family: 'CenturyOldStyle';
+    src: url('../assets/fonts/CenturyOldStyleRegular.ttf') format('truetype'),
+         url('../assets/fonts/CenturyOldStyleRegular.woff2') format('woff2'),
+         url('../assets/fonts/CenturyOldStyleRegular.woff') format('woff'),
+         url('../assets/fonts/CenturyOldStyleRegular.otf') format('opentype');
     font-weight: 400;
     font-style: normal;
 }
 
 /* Century Old Style - Italic */
 @font-face {
-    font-family: 'Century Old Style';
-    src: url('../assets/fonts/CenturyOldStyle-Italic.ttf') format('truetype'),
-         url('../assets/fonts/CenturyOldStyle-Italic.woff2') format('woff2'),
-         url('../assets/fonts/CenturyOldStyle-Italic.woff') format('woff'),
-         url('../assets/fonts/CenturyOldStyle-Italic.otf') format('opentype');
+    font-family: 'CenturyOldStyle';
+    src: url('../assets/fonts/CenturyOldStyleItalic.ttf') format('truetype'),
+         url('../assets/fonts/CenturyOldStyleItalic.woff2') format('woff2'),
+         url('../assets/fonts/CenturyOldStyleItalic.woff') format('woff'),
+         url('../assets/fonts/CenturyOldStyleItalic.otf') format('opentype');
     font-weight: 400;
     font-style: italic;
 }
 
 /* Century Old Style Bold */
 @font-face {
-    font-family: 'Century Old Style';
-    src: url('../assets/fonts/CenturyOldStyle-Bold.ttf') format('truetype'),
-         url('../assets/fonts/CenturyOldStyle-Bold.woff2') format('woff2'),
-         url('../assets/fonts/CenturyOldStyle-Bold.woff') format('woff'),
-         url('../assets/fonts/CenturyOldStyle-Bold.otf') format('opentype');
+    font-family: 'CenturyOldStyle';
+    src: url('../assets/fonts/CenturyOldStyleBold.ttf') format('truetype'),
+         url('../assets/fonts/CenturyOldStyleBold.woff2') format('woff2'),
+         url('../assets/fonts/CenturyOldStyleBold.woff') format('woff'),
+         url('../assets/fonts/CenturyOldStyleBold.otf') format('opentype');
     font-weight: 700;
     font-style: normal;
 }

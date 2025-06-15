@@ -1,5 +1,5 @@
 .featured-product {
-    padding: 60px 24px;
+    padding: 30px 16px;
 }
 
 .featured-product__content {
@@ -8,7 +8,7 @@
     align-items: stretch;
     text-align: center;
     border: 1px solid #004943;
-    padding: 20px;
+    padding: 16px;
     max-width: 1200px;
     margin: 0 auto;
 }
@@ -20,8 +20,11 @@
     flex: 0 0 auto;
 }
 
+.featured-product__image-container {
+    margin-bottom: 16px;
+}
+
 .featured-product__details {
-    padding: 0 80px;
     text-align: left;
 }
 
@@ -32,12 +35,13 @@
 }
 
 .featured-product__heading {
-    font-family: "Century Old", serif;
+    font-family: "CenturyOldStyle", serif;
     font-size: 40px;
     font-style: normal;
     font-weight: 700;
     color: #004943;
-    margin-bottom: 12px
+    margin-bottom: 12px;
+    line-height: 1;
 }
 
 .featured-product__star-rating {
@@ -48,7 +52,7 @@
 }
 
 .featured-product__reviews {
-    margin-bottom: 30px;
+    margin-bottom: 16px;
     display: flex;
     align-items: center;
     justify-content: flex-start;
@@ -63,6 +67,7 @@
 .featured-product__value-props-container {
     list-style-position: inside;
     list-style-image: url('../assets/images/check mark.svg');
+    margin-bottom: 40px;
 }
 
 .featured-product__value-prop {
@@ -76,14 +81,59 @@
     margin-bottom: 6px;
 }
 
+.featured-product__buttons-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 14px;
+    margin-bottom: 16px;
+}
+
+.featured-product__button {
+    width: 100%;
+    flex: 1 1 auto;
+}
+
+.featured-product__price {
+    display: inline-block;
+    margin-left: 6px;
+    font-family: 'CenturyOldStyle', serif;
+    font-size: 14px;
+    font-style: normal;
+    font-weight: 700;
+}
+
 @media screen and (min-width: 768px) {
+    .featured-product {
+        padding: 60px 24px;
+    }
+
     .featured-product__content {
+        padding: 20px;
         flex-direction: row;
         align-items: center;
         justify-content: space-between;
     }
+
     .featured-product__image-container,
     .featured-product__details {
         width: 50%;
+    }
+
+    .featured-product__details {
+        padding: 0 80px;
+        text-align: left;
+    }
+
+    .featured-product__reviews {
+        margin-bottom: 30px;
+    }
+
+    .featured-product__buttons-container {
+        flex-direction: row;
+        align-items: center;
+        gap: 14px;
+        margin-bottom: 16px;
     }
 }
