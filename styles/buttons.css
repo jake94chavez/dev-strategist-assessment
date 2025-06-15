@@ -1,0 +1,56 @@
+.btn {
+    border-radius: 50px;
+    padding: 16px 24px;
+    border: 1px solid transparent;
+    font-family: 'Poppins', sans-serif;
+    font-size: 12px;
+    font-weight: 400;
+    cursor: pointer;
+    text-align: center;
+    transition: all 0.3s ease-in-out;
+    text-transform: uppercase;
+}
+
+.btn--price {
+    text-transform: unset;
+    padding: 12px 20px;
+}
+
+.btn--primary {
+    background-color: #004943;
+    color: #FFFFFF;
+    border-color: #004943;
+}
+
+.btn--primary:hover {
+    background-color: #002E29;
+    border-color: #002E29;
+}
+
+.btn--secondary {
+    background-color: #EBFF9D;
+    color: #004943;
+    border-color: #004943;
+}
+
+.btn--secondary:hover {
+    color: #ffffff;
+    background-color: #002E29;
+    border-color: #002E29;
+}
+
+.btn--primary:focus,
+.btn--secondary:focus {
+    color: #ffffff;
+    background-color: #002E29;
+    border-color: #002E29;
+}
+
+@media (hover: hover) {
+    .btn--primary:hover,
+    .btn--secondary:hover {
+        color: #ffffff;
+        background-color: #002E29;
+        border-color: #002E29;
+    }
+}
