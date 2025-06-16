@@ -4,7 +4,11 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="stylesheet" href="../styles/styles.css" />
-    <script type="text/javascript" src="script.js"></script>
+    <script
+      type="text/javascript"
+      src="../scripts/script.js"
+      defer="defer"
+    ></script>
     <title>Landing Page</title>
   </head>
 
@@ -441,16 +445,22 @@
       <!-- FAQ -->
       <section class="faq">
         <h2 class="faq__heading">Your Questions, Answered</h2>
-        <div class="faq__items-container" js-accordion>
+        <accordion-component class="faq__items-container" js-accordion>
           <div class="faq__item" js-accordion-item>
             <button
               class="faq__question"
               aria-expanded="false"
               js-accordion-header
+              aria-controls="faqAnswer1"
             >
               What makes you different?
             </button>
-            <p class="faq__answer" aria-hidden="true" js-accordion-content>
+            <p
+              id="faqAnswer1"
+              class="faq__answer"
+              aria-hidden="true"
+              js-accordion-content
+            >
               We prioritize quality, fair pricing, and customer care. Partnering
               with top hemp growers, we offer pure, high-caliber products backed
               by a 60-day risk-free guarantee. As a veteran and employee-owned
@@ -465,10 +475,16 @@
               class="faq__question"
               aria-expanded="false"
               js-accordion-header
+              aria-controls="faqAnswer2"
             >
               What if I'm not noticing any effects?
             </button>
-            <p class="faq__answer" aria-hidden="true" js-accordion-content>
+            <p
+              id="faqAnswer2"
+              class="faq__answer"
+              aria-hidden="true"
+              js-accordion-content
+            >
               Not to worry! Everyone responds a bit differently to our hemp
               extract, and you may simply need a larger dose than others. You
               may be what we call a "high responder." This means your body needs
@@ -483,10 +499,16 @@
               class="faq__question"
               aria-expanded="false"
               js-accordion-header
+              aria-controls="faqAnswer3"
             >
               What product should I start with?
             </button>
-            <p class="faq__answer" aria-hidden="true" js-accordion-content>
+            <p
+              id="faqAnswer3"
+              class="faq__answer"
+              aria-hidden="true"
+              js-accordion-content
+            >
               The first step is identifying the concerns you want to address.
               While all our products use the same high-quality hemp extract,
               each delivery method targets different needs. Higher potency
@@ -495,7 +517,7 @@
               higher potencies for better value.
             </p>
           </div>
-        </div>
+        </accordion-component>
       </section>
     </main>
 

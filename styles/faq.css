@@ -7,20 +7,20 @@
     margin: 0 auto;
     text-align: center;
     font-family: "CenturyOldStyle", serif;
-    font-size: 52px;
+    font-size: 42px;
     font-weight: 700;
     line-height: 120%;
     margin-bottom: 24px;
 }
 
 .faq__item {
-    border-top: 1px solid #000000;
+    border-top: 1px solid #2D2926;
     padding: 26px 10px;
     box-sizing: border-box;
 }
 
 .faq__item:last-child {
-    border-bottom: 1px solid #000000;
+    border-bottom: 1px solid #2D2926;
 }
 
 .faq__question {
@@ -31,44 +31,42 @@
     font-weight: 500;
     text-align: left;
     color: #004943;
+    padding-right: 20px
 }
 
 .faq__question::after {
     content: url("../assets/images/Plus Small.svg");
     position: absolute;
+    width: 15px;
+    height: 16px;
+    line-height: 1;
     right: 0;
+    top: 50%;
+    transform: translateY(-50%) rotate(0deg);
     -webkit-transition: transform 0.3s ease-in-out;
     -moz-transition: transform 0.3s ease-in-out;
     -ms-transition: transform 0.3s ease-in-out;
     transition: transform 0.3s ease-in-out;
 }
 
-.faq__question[aria-expanded="true"] {
-    padding-bottom: 22px;
-}
-
 .faq__question[aria-expanded="true"]::after {
-    transform: rotate(45deg);
+    transform: translateY(-50%) rotate(45deg);
 }
 
 .faq__answer {
     overflow: hidden;
-    max-height: 0;
-    -webkit-transition: max-height 0.3s ease-in-out;
-    -moz-transition: max-height 0.3s ease-in-out;
-    -ms-transition: max-height 0.3s ease-in-out;
-    transition: max-height 0.3s ease-in-out;
+    -webkit-transition: height 0.3s ease-in-out, padding-top 0.3s ease-in-out;
+    -moz-transition: height 0.3s ease-in-out, padding-top 0.3s ease-in-out;
+    -ms-transition: height 0.3s ease-in-out, padding-top 0.3s ease-in-out;
+    transition: height 0.3s ease-in-out, padding-top 0.3s ease-in-out;
 }
 
 .faq__answer[aria-hidden="true"] {
-    max-height: 0;
+    padding-top: 0px;
+    height: 0px;
 }
 
 .faq__answer[aria-hidden="false"] {
-    max-height: 100%;
-}
-
-.faq__answer {
     padding-top: 22px;
 }
 
@@ -76,7 +74,8 @@
     .faq {
         padding: 60px 24px;
     }
-    .faq__header {
+    .faq__heading {
+        font-size: 52px;
         margin-bottom: 40px;
     }
     .faq__answer {
