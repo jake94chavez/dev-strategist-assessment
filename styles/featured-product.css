@@ -65,8 +65,7 @@
 }
 
 .featured-product__value-props-container {
-    list-style-position: inside;
-    list-style-image: url('../assets/images/check mark.svg');
+    list-style-type: none;
     margin-bottom: 40px;
 }
 
@@ -75,10 +74,22 @@
     font-style: normal;
     font-weight: 400;
     line-height: 29px;
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    gap: 14px;
 }
 
 .featured-product__value-prop:not(:last-child) {
     margin-bottom: 6px;
+}
+
+.featured-product__value-prop::marker {
+    font-size: 20px;
+}
+
+.featured-product__value-prop-icon {
+    line-height: 0;
 }
 
 .featured-product__buttons-container {
@@ -92,19 +103,22 @@
 
 .featured-product__button {
     width: 100%;
-    flex: 1 1 auto;
+    flex: 0 1 auto;
+}
+
+.featured-product__button:not(.btn--price) {
+    width: 100%;
 }
 
 .featured-product__price {
     display: inline-block;
-    margin-left: 6px;
     font-family: 'CenturyOldStyle', serif;
     font-size: 14px;
     font-style: normal;
     font-weight: 700;
 }
 
-@media screen and (min-width: 768px) {
+@media screen and (min-width: 1024px) {
     .featured-product {
         padding: 60px 24px;
     }
@@ -129,11 +143,14 @@
     .featured-product__reviews {
         margin-bottom: 30px;
     }
+}
 
+@media screen and (min-width: 1200px) {
     .featured-product__buttons-container {
         flex-direction: row;
         align-items: center;
         gap: 14px;
         margin-bottom: 16px;
     }
+    
 }
