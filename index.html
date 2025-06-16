@@ -54,8 +54,111 @@
     <main class="main">
       <!-- Hero -->
       <section class="hero">
-        <h1 class="hero__heading">Welcome to the Landing Page</h1>
-        <p class="hero__subheading">This is a simple landing page.</p>
+        <div class="hero__image-container">
+          <picture class="hero__image-picture">
+            <source
+              media="screen and (min-width:768px)"
+              srcset="../assets/images/HP-Hero_DESKTOP.jpg"
+              type="image/jpg"
+            />
+            <img
+              class="hero__image"
+              src="../assets/images/HP-Hero_MOBILE.jpg"
+              alt="Hero Image"
+            />
+          </picture>
+        </div>
+        <div class="hero__overlay">
+          <div class="hero__content">
+            <div class="hero__reviews">
+              <div class="hero__star-rating">
+                <svg
+                  width="18"
+                  height="18"
+                  viewBox="0 0 18 18"
+                  fill="none"
+                  xmlns="http://www.w3.org/2000/svg"
+                  class="icon-star"
+                >
+                  <path
+                    d="M9 0.942871L11.0206 7.16172H17.5595L12.2694 11.0052L14.2901 17.224L9 13.3806L3.70993 17.224L5.73056 11.0052L0.440492 7.16172H6.97937L9 0.942871Z"
+                    fill="#004943"
+                  />
+                </svg>
+
+                <svg
+                  width="18"
+                  height="18"
+                  viewBox="0 0 18 18"
+                  fill="none"
+                  xmlns="http://www.w3.org/2000/svg"
+                  class="icon-star"
+                >
+                  <path
+                    d="M9 0.942871L11.0206 7.16172H17.5595L12.2694 11.0052L14.2901 17.224L9 13.3806L3.70993 17.224L5.73056 11.0052L0.440492 7.16172H6.97937L9 0.942871Z"
+                    fill="#004943"
+                  />
+                </svg>
+
+                <svg
+                  width="18"
+                  height="18"
+                  viewBox="0 0 18 18"
+                  fill="none"
+                  xmlns="http://www.w3.org/2000/svg"
+                  class="icon-star"
+                >
+                  <path
+                    d="M9 0.942871L11.0206 7.16172H17.5595L12.2694 11.0052L14.2901 17.224L9 13.3806L3.70993 17.224L5.73056 11.0052L0.440492 7.16172H6.97937L9 0.942871Z"
+                    fill="#004943"
+                  />
+                </svg>
+
+                <svg
+                  width="18"
+                  height="18"
+                  viewBox="0 0 18 18"
+                  fill="none"
+                  xmlns="http://www.w3.org/2000/svg"
+                  class="icon-star"
+                >
+                  <path
+                    d="M9 0.942871L11.0206 7.16172H17.5595L12.2694 11.0052L14.2901 17.224L9 13.3806L3.70993 17.224L5.73056 11.0052L0.440492 7.16172H6.97937L9 0.942871Z"
+                    fill="#004943"
+                  />
+                </svg>
+
+                <svg
+                  width="18"
+                  height="18"
+                  viewBox="0 0 18 18"
+                  fill="none"
+                  xmlns="http://www.w3.org/2000/svg"
+                  class="icon-star"
+                >
+                  <path
+                    d="M9 0.942871L11.0206 7.16172H17.5595L12.2694 11.0052L14.2901 17.224L9 13.3806L3.70993 17.224L5.73056 11.0052L0.440492 7.16172H6.97937L9 0.942871Z"
+                    fill="#004943"
+                  />
+                </svg>
+              </div>
+              <span class="hero__review-count"
+                >Over 50,000 happy customers</span
+              >
+            </div>
+            <h1 class="hero__heading">
+              Rest, relieve, recover, relax,
+              <span class="text-italic font-400">repeat.</span>
+            </h1>
+            <p class="hero__subheading">
+              An all-natural solution that can help relieve aches, regulate
+              mood, and get a better night's sleep.
+            </p>
+            <a class="hero__btn btn btn--primary" href="#featuredProduct"
+              >Shop Now</a
+            >
+          </div>
+        </div>
       </section>
 
       <!-- Featured In -->
@@ -300,7 +403,7 @@
       </section>
 
       <!-- Featured Product -->
-      <section class="featured-product">
+      <section id="featuredProduct" class="featured-product">
         <div class="featured-product__content">
           <div class="featured-product__image-container">
             <img
