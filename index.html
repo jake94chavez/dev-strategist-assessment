@@ -4,7 +4,11 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="stylesheet" href="../styles/styles.css" />
-    <script type="text/javascript" src="script.js"></script>
+    <script
+      type="text/javascript"
+      src="../scripts/script.js"
+      defer="defer"
+    ></script>
     <title>Landing Page</title>
   </head>
 
@@ -440,27 +444,80 @@
 
       <!-- FAQ -->
       <section class="faq">
-        <h2 class="faq__heading">Frequently Asked Questions</h2>
-        <div class="faq__item">
-          <h3 class="faq__question">What is this landing page about?</h3>
-          <p class="faq__answer">
-            This landing page is a simple example to demonstrate layout and
-            design.
-          </p>
-        </div>
-        <div class="faq__item">
-          <h3 class="faq__question">How can I contact support?</h3>
-          <p class="faq__answer">
-            You can contact support via the contact form on our website.
-          </p>
-        </div>
-        <div class="faq__item">
-          <h3 class="faq__question">Where can I find more information?</h3>
-          <p class="faq__answer">
-            More information can be found in the documentation section of our
-            site.
-          </p>
-        </div>
+        <h2 class="faq__heading">Your Questions, Answered</h2>
+        <accordion-component class="faq__items-container" js-accordion>
+          <div class="faq__item" js-accordion-item>
+            <button
+              class="faq__question"
+              aria-expanded="false"
+              js-accordion-header
+              aria-controls="faqAnswer1"
+            >
+              What makes you different?
+            </button>
+            <p
+              id="faqAnswer1"
+              class="faq__answer"
+              aria-hidden="true"
+              js-accordion-content
+            >
+              We prioritize quality, fair pricing, and customer care. Partnering
+              with top hemp growers, we offer pure, high-caliber products backed
+              by a 60-day risk-free guarantee. As a veteran and employee-owned
+              company, we focus on customers, not shareholders, which is why our
+              prices are often lower than big brands. Have questions? Contact us
+              at <a href="mailto:contact@rrmeds.com">contact@rrmeds.com</a> —
+              we're here to help!
+            </p>
+          </div>
+          <div class="faq__item" js-accordion-item>
+            <button
+              class="faq__question"
+              aria-expanded="false"
+              js-accordion-header
+              aria-controls="faqAnswer2"
+            >
+              What if I'm not noticing any effects?
+            </button>
+            <p
+              id="faqAnswer2"
+              class="faq__answer"
+              aria-hidden="true"
+              js-accordion-content
+            >
+              Not to worry! Everyone responds a bit differently to our hemp
+              extract, and you may simply need a larger dose than others. You
+              may be what we call a "high responder." This means your body needs
+              a higher dose than other people, and this is not uncommon. For
+              this, we recommend increasing your dose gradually until a desired
+              effect is achieved. Beyond this, we suggest trying a stronger
+              potency product from our offerings.
+            </p>
+          </div>
+          <div class="faq__item" js-accordion-item>
+            <button
+              class="faq__question"
+              aria-expanded="false"
+              js-accordion-header
+              aria-controls="faqAnswer3"
+            >
+              What product should I start with?
+            </button>
+            <p
+              id="faqAnswer3"
+              class="faq__answer"
+              aria-hidden="true"
+              js-accordion-content
+            >
+              The first step is identifying the concerns you want to address.
+              While all our products use the same high-quality hemp extract,
+              each delivery method targets different needs. Higher potency
+              typically means a stronger effect. If you're new, start with
+              mid-range options to see how your body responds, then move up to
+              higher potencies for better value.
+            </p>
+          </div>
+        </accordion-component>
       </section>
     </main>
 

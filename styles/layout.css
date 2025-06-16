@@ -5,6 +5,7 @@ body {
     font-style: normal;
     font-weight: 400;
     line-height: 29px;
+    color: #2D2926
 }
 
 p {
@@ -25,4 +26,11 @@ a {
 ul {
     margin: 0px;
     padding: 0px;
+}
+
+button {
+    background: none;
+    border: none;
+    padding: 0px;
+    cursor: pointer;
 }
