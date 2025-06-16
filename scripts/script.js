@@ -1,5 +1,6 @@
-console.log('hello world');
-
+// Accordion Component
+// This component allows for the creation of an accordion interface
+// where sections can be expanded and collapsed.
 class Accordion extends HTMLElement {
   constructor() {
     super();   
@@ -12,15 +13,16 @@ class Accordion extends HTMLElement {
     }
   }
 
+  // Get all buttons in this accordion instance and add event listeners
   connectedCallback(){
     this.buttons = this.querySelectorAll(this._selectors.accordionHeader);
     this.buttons.forEach(button => {
       button.addEventListener('click', this._toggleContent)
     })
-
-    this.content = this.querySelectorAll(this._selectors.accordionContent);
   }
 
+  // Toggle the content of an accordion item
+  // Change aria attributes accordingly
   _toggleContent = (e) => {
     e.stopImmediatePropagation();
     const trigger = e.currentTarget;

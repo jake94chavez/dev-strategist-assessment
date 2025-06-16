@@ -19,6 +19,12 @@
     text-transform: unset;
     padding: 12px 20px;
     font-size: 12px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 6px;
+    white-space: nowrap;
+    letter-spacing: normal;
 }
 
 .btn--primary {
@@ -36,12 +42,6 @@
     background-color: #EBFF9D;
     color: #004943;
     border-color: #004943;
-}
-
-.btn--secondary:hover {
-    color: #ffffff;
-    background-color: #002E29;
-    border-color: #002E29;
 }
 
 .btn--primary:focus,

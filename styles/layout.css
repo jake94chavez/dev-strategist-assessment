@@ -1,3 +1,7 @@
+html {
+    scroll-behavior: smooth;
+}
+
 body {
     font-family: 'Poppins', sans-serif;
     margin: 0px;
@@ -5,7 +9,7 @@ body {
     line-height: 24px;
     font-style: normal;
     font-weight: 400;
-    color: #2D2926
+    color: #2D2926;
 }
 
 p {
@@ -35,9 +39,16 @@ button {
     cursor: pointer;
 }
 
+:target {
+    scroll-margin-top: 140px;
+}
+
 @media screen and (min-width: 1024px) {
     body {
         font-size: 19px;
         line-height: 29px;
+    }
+    :target {
+        scroll-margin-top: 122px;
     }
 }
