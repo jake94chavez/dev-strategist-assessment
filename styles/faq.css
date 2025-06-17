@@ -38,6 +38,10 @@
     padding-right: 20px
 }
 
+.faq__question:focus {
+    text-decoration: underline;
+}
+
 .faq__question::after {
     content: url("../assets/images/Plus Small.svg");
     position: absolute;

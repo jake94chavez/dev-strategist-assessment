@@ -57,7 +57,7 @@
     text-decoration: none;
 }
 
-.link:hover {
+.link:focus {
     text-decoration: underline;
 }
 
@@ -67,5 +67,9 @@
         color: #ffffff;
         background-color: #002E29;
         border-color: #002E29;
+    }
+    
+    .link:hover {
+        text-decoration: underline;
     }
 }
