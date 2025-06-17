@@ -52,11 +52,24 @@
     border-color: #002E29;
 }
 
+.link {
+    color: #004943;
+    text-decoration: none;
+}
+
+.link:focus {
+    text-decoration: underline;
+}
+
 @media (hover: hover) {
     .btn--primary:hover,
     .btn--secondary:hover {
         color: #ffffff;
         background-color: #002E29;
         border-color: #002E29;
+    }
+    
+    .link:hover {
+        text-decoration: underline;
     }
 }

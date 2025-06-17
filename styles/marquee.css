@@ -16,7 +16,7 @@
     justify-content: space-around;
     flex-shrink: 0;
     gap: 30px;
-    animation: marquee-scroll-mobile 12s linear infinite;
+    animation: marquee-scroll-mobile 14s linear infinite;
     min-width: 100%;
 }
 
@@ -35,12 +35,12 @@
 
 @media screen and (min-width: 768px) {
     .marquee {
-        gap: 30px;
+        gap: 60px;
     }
 
     .marquee__content {
-        gap: 30px;
-        animation: marquee-scroll-desktop 10s linear infinite;
+        gap: 60px;
+        animation: marquee-scroll-desktop 14s linear infinite;
     }
     
 }

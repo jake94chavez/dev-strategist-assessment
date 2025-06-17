@@ -1,0 +1,70 @@
+<section class="faq">
+  {% if section.settings.title != blank %}
+    <h2 class="faq__heading">{{ section.settings.title }}</h2>
+  {% endif %}
+  <accordion-component class="faq__items-container" js-accordion>
+    {% for block in section.blocks %}
+      <div class="faq__item" js-accordion-item>
+        <button
+          class="faq__question"
+          aria-expanded="false"
+          js-accordion-header
+          aria-controls="faqAnswer{{forloop.index}}"
+        >
+          {{ block.settings.title }}
+        </button>
+        <p
+          id="faqAnswer{{forloop.index}}"
+          class="faq__answer"
+          aria-hidden="true"
+          js-accordion-content
+        >
+          {{ block.settings.answer }}
+        </p>
+      </div>
+    {% endfor %}
+  </accordion-component>
+</section>
+
+{% schema %}
+{
+  "name": "FAQ Section",
+  "settings": [
+    {
+      "type": "header",
+      "content": "FAQ Section Settings"
+    },
+    {
+      "type": "text",
+      "id": "title",
+      "label": "Section Heading",
+      "default": "Your Questions, Answered"
+    }
+  ],
+  "blocks": [
+    {
+      "type": "faq_item",
+      "name": "FAQ Item",
+      "settings": [
+        {
+          "type": "text",
+          "id": "title",
+          "label": "Question",
+          "default": "What is your question?"
+        },
+        {
+          "type": "inline_richtext",
+          "id": "answer",
+          "label": "Answer",
+          "default": "Your answer goes here."
+        }
+      ]
+    }
+  ],
+  "presets": [
+    {
+      "name": "FAQ Section"
+    }
+  ]
+}
+{% endschema %}

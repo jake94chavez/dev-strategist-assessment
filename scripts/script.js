@@ -71,4 +71,12 @@ _expandSection(element) {
   }
 }
 
+document.body.addEventListener('mouseleave', (e) => {
+  document.title = '⚠️ WAIT ⚠️';
+});
+
+document.body.addEventListener('mouseenter', (e) => {
+  document.title = 'Rest, relieve, recover, relax, repeat';
+});
+
 customElements.define('accordion-component', Accordion);
