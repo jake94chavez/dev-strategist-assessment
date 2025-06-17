@@ -21,6 +21,7 @@
 }
 
 .featured-product__image-container {
+    position: relative;
     margin-bottom: 16px;
 }
 
@@ -32,6 +33,19 @@
     max-width: 100%;
     height: auto;
     display: block;
+}
+
+.featured-product__badge {
+    position: absolute;
+    top: 20px;
+    left: 20px;
+    font-size: 12px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: 12px;
+    letter-spacing: 0.36px;
+    padding: 6px 10px;
+    transition: unset;
 }
 
 .featured-product__heading {
@@ -133,6 +147,7 @@
     .featured-product__image-container,
     .featured-product__details {
         width: 50%;
+        margin-bottom: 0;
     }
 
     .featured-product__details {
