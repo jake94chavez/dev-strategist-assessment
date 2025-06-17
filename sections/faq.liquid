@@ -9,12 +9,12 @@
           class="faq__question"
           aria-expanded="false"
           js-accordion-header
-          aria-controls="faqAnswer{{forloop.index}}"
+          aria-controls="faqAnswer{{forloop.index}}-{{ block.id }}"
         >
           {{ block.settings.title }}
         </button>
         <p
-          id="faqAnswer{{forloop.index}}"
+          id="faqAnswer{{forloop.index}}-{{ block.id }}"
           class="faq__answer"
           aria-hidden="true"
           js-accordion-content
