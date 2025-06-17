@@ -17,6 +17,7 @@ Published using Vercel.
 8. Once installed, I verified they were working using the chrome extensions provided by Meta and Google.
 9. From there, my focus shifted to [A/B testing](#ab-testing), discussed below.
 10. After A/B Testing, I refocused on the page for QA and device testing. I did some lite QA throughout the development of this page, which is my usual process, but because I worked on this solo, I decided to give it an additional thorough pass.
+11. After QA, I added a [sections folder](./sections) with a [sample file](./sections/faq.liquid), creating the FAQ section as a `.liquid` file with settings.
 
 > [!NOTE]
 > I took some liberties with functionality and animations. I have the hero Shop Now button scroll to the product section, rather than go to the Product Page. I believe this could increase users scrolling to the product section, and has potential to increase Add to Carts from this page rather than adding a friction point by going to the Product Page. I also implemented smooth scrolling for in-page links.  
