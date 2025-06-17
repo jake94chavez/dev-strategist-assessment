@@ -52,6 +52,15 @@
     border-color: #002E29;
 }
 
+.link {
+    color: #004943;
+    text-decoration: none;
+}
+
+.link:hover {
+    text-decoration: underline;
+}
+
 @media (hover: hover) {
     .btn--primary:hover,
     .btn--secondary:hover {
