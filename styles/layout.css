@@ -39,6 +39,21 @@ button {
     cursor: pointer;
 }
 
+.skip-to-content-link {
+    top:0px;
+    left: 0px;
+    position: absolute;
+    z-index: 99;
+    background: white;
+    padding: 6px;
+    border: 1px solid black;
+    transform: translateX(-100%);
+}
+
+.skip-to-content-link:focus {
+  transform: translateY(0%);
+}
+
 :target {
     scroll-margin-top: 140px;
 }
