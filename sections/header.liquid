@@ -1,0 +1,59 @@
+<header class="header">
+  {% if section.settings.promo_text != blank %}
+    <div class="header__promo-bar">
+      <p class="header__promo-text">{{ section.settings.promo_text }}</p>
+    </div>
+  {% endif %}
+  <div class="header__main">
+    {% if section.settings.logo_url %}
+      <a class="header__logo-link" href="{{ section.settings.logo_url }}">
+        {{ section.settings.logo }}
+      </a>
+    {% else %}
+      <span class="header__logo-link">
+        {{ section.settings.svg_logo }}
+      </span>
+    {% endif %}
+  </div>
+</header>
+{% schema %}
+{
+  "name": "Header",
+  "settings": [
+    {
+      "type": "header",
+      "content": "Main Header Settings"
+    },
+    {
+      "type": "html",
+      "id": "svg_logo",
+      "label": "SVG Logo"
+    },
+    {
+      "type": "url",
+      "id": "logo_url",
+      "label": "Logo URL",
+      "default": "/"
+    },
+    {
+      "type": "header",
+      "content": "Promo Bar Settings"
+    },
+    {
+      "type": "header",
+      "content": "Promo Bar Settings"
+    },
+    {
+      "type": "text",
+      "id": "promo_text",
+      "label": "Promo Text",
+      "default": "Promo text goes here"
+    }
+  ],
+  "presets": [
+    {
+      "name": "Header"
+    }
+  ]
+}
+{% endschema %}
