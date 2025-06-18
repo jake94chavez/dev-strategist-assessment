@@ -1,0 +1,29 @@
+<footer class="footer">
+  <div class="footer__logo-container" style="--bg-color: {{ section.settings.background_color }};">
+    {{ section.svg_logo }}
+  </div>
+</footer>
+
+{% schema %}
+{
+  "name": "Footer",
+  "settings": [
+    {
+      "type": "html",
+      "id": "svg_logo",
+      "label": "Logo"
+    },
+    {
+      "type": "color",
+      "id": "background_color",
+      "label": "Background Color",
+      "default": "#002E29"
+    }
+  ],
+  "presets": [
+    {
+      "name": "Footer"
+    }
+  ]
+}
+{% endschema %}

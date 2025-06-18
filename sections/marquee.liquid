@@ -1,0 +1,70 @@
+<section
+  class="marquee"
+  style="--marquee-speed: {{ section.settings.marquee_speed }}s; --marquee-speed-desk: {{ section.settings.marquee_speed_desk }}s;"
+>
+  {% for i in (1..2) %}
+    {% assign counter = forloop.index %}
+    <div
+      class="marquee__content"
+      {% if forloop.last %}
+        aria-hidden="true"
+      {% endif %}
+    >
+      {% for block in section.blocks %}
+        <span class="marquee__text">{{ block.settings.marquee_text }}</span>
+      {% endfor %}
+      {% for block in section.blocks %}
+        <span
+          class="marquee__text"
+          {% if counter == 1 %}
+            aria-hidden="true"
+          {% endif %}
+        >
+          {{- block.settings.marquee_text -}}
+        </span>
+      {% endfor %}
+    </div>
+  {% endfor %}
+</section>
+
+{% schema %}
+{
+  "name": "Marquee",
+  "settings": [
+    {
+      "type": "range",
+      "id": "marquee_speed",
+      "label": "Marquee Speed (Seconds)",
+      "default": 14,
+      "min": 8,
+      "max": 20
+    },
+    {
+      "type": "range",
+      "id": "marquee_speed_desk",
+      "label": "Dektop Marquee Speed (Seconds)",
+      "default": 14,
+      "min": 8,
+      "max": 20
+    }
+  ],
+  "presets": [
+    {
+      "name": "Marquee"
+    }
+  ],
+  "blocks": [
+    {
+      "type": "text",
+      "name": "Text",
+      "settings": [
+        {
+          "type": "text",
+          "id": "marquee_text",
+          "label": "Marquee Text"
+        }
+      ]
+    }
+  ]
+}
+{% endschema %}
