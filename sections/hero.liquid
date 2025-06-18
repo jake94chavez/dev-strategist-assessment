@@ -20,7 +20,10 @@
       </picture>
     </div>
   {% endif %}
-  <div class="hero__overlay">
+  <div
+    class="hero__overlay"
+    style="--align-x: {{ section.settings.content_alignment_x }}; --align-y: {{ section.settings.content_alignment_y }}; --align-x-desk: {{ section.settings.content_alignment_x_desk }}; --align-y-desk: {{ section.settings.content_alignment_y_desk }};"
+  >
     <div class="hero__content">
       {% if section.settings.reviews_html != blank %}
         <div class="hero__reviews">
