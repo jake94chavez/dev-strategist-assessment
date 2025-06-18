@@ -1,6 +1,6 @@
 <footer class="footer">
-  <div class="footer__logo-container">
-    {{ section.logo }}
+  <div class="footer__logo-container" style="--bg-color: {{ section.settings.background_color }};">
+    {{ section.svg_logo }}
   </div>
 </footer>
 
@@ -9,9 +9,15 @@
   "name": "Footer",
   "settings": [
     {
-      "type": "image_picker",
-      "id": "logo",
+      "type": "html",
+      "id": "svg_logo",
       "label": "Logo"
+    },
+    {
+      "type": "color",
+      "id": "background_color",
+      "label": "Background Color",
+      "default": "#002E29"
     }
   ],
   "presets": [
